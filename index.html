@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sammy Sharp Oil and Gas Limited</title>
+    <title>Sammy Sharp Oil and Gas Limited — Premium Gas Supply in Nigeria</title>
+    <meta name="description" content="Sammy Sharp Oil and Gas Limited — Nigeria's trusted supplier of industrial, medical, and specialty gases. Safe delivery, premium quality, uncompromising standards.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
         .hero-bg {
             background-image: url('background.jpeg');
@@ -19,68 +20,30 @@
 </head>
 <body class="bg-zinc-950 text-white">
 
-    <!-- NAVIGATION -->
-    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-                    <img src="logo.jpeg" alt="Logo" class="h-10 w-auto">
-                    <div>
-                        <span class="text-base md:text-xl font-bold tracking-tighter">SAMMY SHARP</span>
-                        <span class="block text-xs text-amber-400 -mt-1">OIL &amp; GAS LIMITED</span>
-                    </div>
-                </a>
-                <!-- Desktop Links -->
-                <div class="hidden lg:flex items-center gap-5 xl:gap-8 text-sm font-medium">
-                    <a href="index.html" class="text-amber-400 font-semibold">HOME</a>
-                    <a href="about.html" class="hover:text-amber-400 transition-colors">ABOUT US</a>
-                    <a href="operations.html" class="hover:text-amber-400 transition-colors">OPERATIONS</a>
-                    <a href="gallery.html" class="hover:text-amber-400 transition-colors">GALLERY</a>
-                    <a href="locate.html" class="hover:text-amber-400 transition-colors">LOCATE US</a>
-                    <a href="contact.html" class="hover:text-amber-400 transition-colors">CONTACT</a>
-                    <a href="teams.html" class="hover:text-amber-400 transition-colors">TEAM</a>
-                </div>
-                <!-- Hamburger -->
-                <button onclick="toggleMobileMenu()" id="hamburgerBtn" aria-label="Open menu" class="lg:hidden text-white text-2xl p-2">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-zinc-900 border-t border-zinc-800">
-            <div class="flex flex-col px-6 py-4">
-                <a href="index.html" class="py-3 border-b border-zinc-800 text-amber-400 font-semibold">HOME</a>
-                <a href="about.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">ABOUT US</a>
-                <a href="operations.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">OPERATIONS</a>
-                <a href="gallery.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">GALLERY</a>
-                <a href="locate.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">LOCATE US</a>
-                <a href="contact.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">CONTACT</a>
-                <a href="teams.html" class="py-3 hover:text-amber-400 transition-colors">TEAM</a>
-            </div>
-        </div>
-    </nav>
+    <!-- SHARED NAV -->
+    <div id="nav-root"></div>
+    <script src="assets/js/nav.js"></script>
 
     <!-- HERO -->
-    <section class="hero-bg h-screen flex items-center relative">
-        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-transparent"></div>
-        <div class="max-w-7xl mx-auto px-6 relative z-10 pt-20">
+    <section class="hero-bg min-h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 pt-24 pb-16">
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
-                    <span class="text-sm font-medium tracking-widest">YOUR TRUSTED GAS PARTNER</span>
+                    <span class="text-xs sm:text-sm font-medium tracking-widest uppercase">Your Trusted Gas Partner</span>
                 </div>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tighter mb-6">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tighter mb-6">
                     SAMMY SHARP<br>
-                    <span class="text-amber-400">OIL & GAS</span>
+                    <span class="text-amber-400">OIL &amp; GAS</span>
                 </h1>
-                <p class="text-xl text-zinc-300 mb-10">
-                    Premium Industrial & Medical Gases • Reliable Delivery • Uncompromising Safety
+                <p class="text-base sm:text-xl text-zinc-300 mb-10 leading-relaxed">
+                    Premium Industrial &amp; Medical Gases &bull; Reliable Delivery &bull; Uncompromising Safety
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="contact.html" class="bg-amber-400 hover:bg-amber-500 text-black font-semibold px-8 py-4 rounded-xl inline-flex items-center gap-2">
+                    <a href="contact.html" class="bg-amber-400 hover:bg-amber-500 text-black font-semibold px-8 py-4 rounded-xl inline-flex items-center justify-center gap-2 transition-colors">
                         <i class="fa-solid fa-phone"></i> GET A QUOTE
                     </a>
-                    <a href="operations.html" class="border border-white/60 hover:bg-white/10 px-8 py-4 rounded-xl">
+                    <a href="operations.html" class="border border-white/60 hover:bg-white/10 px-8 py-4 rounded-xl text-center transition-colors">
                         OUR SERVICES
                     </a>
                 </div>
@@ -89,62 +52,53 @@
     </section>
 
     <!-- OUR GASES -->
-    <section class="py-24 bg-zinc-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold">Our Gases</h2>
+    <section class="py-20 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold">Our Gases</h2>
+                <p class="text-zinc-400 mt-4 text-lg">Industrial, medical &amp; specialty gases delivered safely across Nigeria</p>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🟢 Oxygen (O₂)</div>
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center">⚫ CO₂</div>
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center">⚪ Argon (Ar)</div>
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🟠 Helium (He)</div>
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🔴 LPG</div>
-                <div class="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-400/30">+ Many More</div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center hover:bg-zinc-800 transition-colors">🟢 Oxygen (O₂)</div>
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center hover:bg-zinc-800 transition-colors">⚫ CO₂</div>
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center hover:bg-zinc-800 transition-colors">⚪ Argon (Ar)</div>
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center hover:bg-zinc-800 transition-colors">🟠 Helium (He)</div>
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center hover:bg-zinc-800 transition-colors">🔴 LPG</div>
+                <div class="bg-zinc-900 rounded-2xl p-5 text-center border border-amber-400/30 hover:bg-zinc-800 transition-colors">+ Many More</div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-black pt-20 pb-10">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-12 gap-12">
-                <!-- Company Info -->
+    <footer class="bg-black pt-16 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="grid sm:grid-cols-2 md:grid-cols-12 gap-10">
                 <div class="md:col-span-5">
-                    <div class="flex items-center gap-3 mb-8">
-                        <img src="logo.jpeg" alt="Logo" class="h-14">
-                        <div class="text-3xl font-bold">SAMMY SHARP</div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <img src="logo.jpeg" alt="Logo" class="h-12">
+                        <div class="text-2xl font-bold">SAMMY SHARP</div>
                     </div>
-                    <p class="text-zinc-400 max-w-md">
-                        Your trusted partner for industrial, medical, and specialty gases in Nigeria. 
-                        Safety • Quality • Reliability
-                    </p>
-                    
-                    <!-- Social Media -->
-                    <div class="flex gap-6 mt-10 text-2xl">
-                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-whatsapp"></i></a>
+                    <p class="text-zinc-400 leading-relaxed">Your trusted partner for industrial, medical, and specialty gases in Nigeria. Safety &bull; Quality &bull; Reliability</p>
+                    <div class="flex gap-5 mt-8 text-xl">
+                        <a href="#" class="text-zinc-400 hover:text-amber-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-zinc-400 hover:text-amber-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-zinc-400 hover:text-amber-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://wa.me/2347039281325" target="_blank" class="text-zinc-400 hover:text-amber-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
                 <div class="md:col-span-2">
-                    <h3 class="font-semibold mb-6">Quick Links</h3>
+                    <h3 class="font-semibold mb-5 text-white">Quick Links</h3>
                     <div class="space-y-3 text-zinc-400">
-                        <a href="about.html" class="block hover:text-white">About Us</a>
-                        <a href="operations.html" class="block hover:text-white">Operations</a>
-                        <a href="gallery.html" class="block hover:text-white">Gallery</a>
-                        <a href="teams.html" class="block hover:text-white">Our Team</a>
-                        <a href="locate.html" class="block hover:text-white">Locate Us</a>
+                        <a href="about.html" class="block hover:text-white transition-colors">About Us</a>
+                        <a href="operations.html" class="block hover:text-white transition-colors">Operations</a>
+                        <a href="gallery.html" class="block hover:text-white transition-colors">Gallery</a>
+                        <a href="teams.html" class="block hover:text-white transition-colors">Our Team</a>
+                        <a href="locate.html" class="block hover:text-white transition-colors">Locate Us</a>
+                        <a href="contact.html" class="block hover:text-white transition-colors">Contact</a>
                     </div>
                 </div>
-
-                <!-- Services -->
                 <div class="md:col-span-2">
-                    <h3 class="font-semibold mb-6">Services</h3>
+                    <h3 class="font-semibold mb-5 text-white">Services</h3>
                     <div class="space-y-3 text-zinc-400">
                         <div>Medical Gases</div>
                         <div>Industrial Gases</div>
@@ -152,48 +106,36 @@
                         <div>Cylinder Refilling</div>
                     </div>
                 </div>
-
-                <!-- Contact -->
                 <div class="md:col-span-3">
-                    <h3 class="font-semibold mb-6">Contact Us</h3>
+                    <h3 class="font-semibold mb-5 text-white">Contact Us</h3>
                     <div class="space-y-4 text-zinc-400">
+                        <a href="tel:+2347039281325" class="flex gap-3 hover:text-amber-400 transition-colors">
+                            <i class="fa-solid fa-phone mt-1 flex-shrink-0"></i> +234 703 928 1325
+                        </a>
+                        <a href="mailto:dompurespecial@gmail.com" class="flex gap-3 hover:text-amber-400 transition-colors break-all">
+                            <i class="fa-solid fa-envelope mt-1 flex-shrink-0"></i> dompurespecial@gmail.com
+                        </a>
                         <div class="flex gap-3">
-                            <i class="fa-solid fa-phone mt-1"></i>
-                            <div>+234 703 928 1325</div>
-                        </div>
-                        <div class="flex gap-3">
-                            <i class="fa-solid fa-envelope mt-1"></i>
-                            <div>dompurespecial@gmail.com</div>
-                        </div>
-                        <div class="flex gap-3">
-                            <i class="fa-solid fa-location-dot mt-1"></i>
-                            <div>Abuja, Nigeria</div>
+                            <i class="fa-solid fa-location-dot mt-1 flex-shrink-0"></i> Abuja, Nigeria
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="border-t border-zinc-900 mt-16 pt-8 text-center text-sm text-zinc-500">
-                © 2026 Sammy Sharp Oil and Gas Limited. All Rights Reserved.
+            <div class="border-t border-zinc-900 mt-12 pt-8 text-center text-sm text-zinc-500">
+                &copy; 2026 Sammy Sharp Oil and Gas Limited. All Rights Reserved.
             </div>
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/2347039281325" target="_blank"
-       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
-        <i class="fa-brands fa-whatsapp text-4xl text-white"></i>
+    <!-- FLOATING BUTTONS -->
+    <a href="tel:+2347039281325" aria-label="Call us"
+       class="fixed bottom-24 right-5 bg-blue-600 hover:bg-blue-700 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
+        <i class="fa-solid fa-phone text-2xl text-white"></i>
     </a>
-	<!-- CLICK TO CALL BUTTON -->
-<a href="tel:+2347039281325" 
-   class="fixed bottom-24 right-6 bg-blue-600 hover:bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
-    <i class="fa-solid fa-phone text-4xl text-white"></i>
-</a>
+    <a href="https://wa.me/2347039281325" target="_blank" rel="noopener" aria-label="WhatsApp us"
+       class="fixed bottom-6 right-5 bg-green-500 hover:bg-green-600 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
+        <i class="fa-brands fa-whatsapp text-2xl text-white"></i>
+    </a>
 
-    <script>
-        function toggleMobileMenu() {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        }
-    </script>
 </body>
 </html>
