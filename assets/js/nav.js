@@ -48,7 +48,7 @@
 
           <!-- Logo / Brand -->
           <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
-            <img src="logo.jpeg" alt="Sammy Sharp Oil and Gas Logo" class="h-10 w-auto object-contain">
+            <img src="assets/images/logo.jpeg" alt="Sammy Sharp Oil and Gas Logo" class="h-10 w-auto object-contain">
             <div class="leading-tight">
               <span class="block text-base sm:text-lg font-bold tracking-tight text-white">SAMMY SHARP</span>
               <span class="block text-xs text-amber-400">OIL &amp; GAS LIMITED</span>
