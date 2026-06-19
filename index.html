@@ -21,36 +21,42 @@
 
     <!-- NAVIGATION -->
     <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
-        <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-7xl mx-auto px-4 md:px-6">
             <div class="flex justify-between items-center h-20">
-                <div class="flex items-center gap-3">
-                    <img src="logo.jpeg" alt="Logo" class="h-12 w-auto">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+                    <img src="logo.jpeg" alt="Logo" class="h-10 w-auto">
                     <div>
-                        <span class="text-xl md:text-2xl font-bold tracking-tighter">SAMMY SHARP</span>
-                        <span class="block text-xs text-amber-400 -mt-1">OIL & GAS LIMITED</span>
+                        <span class="text-base md:text-xl font-bold tracking-tighter">SAMMY SHARP</span>
+                        <span class="block text-xs text-amber-400 -mt-1">OIL &amp; GAS LIMITED</span>
                     </div>
+                </a>
+                <!-- Desktop Links -->
+                <div class="hidden lg:flex items-center gap-5 xl:gap-8 text-sm font-medium">
+                    <a href="index.html" class="text-amber-400 font-semibold">HOME</a>
+                    <a href="about.html" class="hover:text-amber-400 transition-colors">ABOUT US</a>
+                    <a href="operations.html" class="hover:text-amber-400 transition-colors">OPERATIONS</a>
+                    <a href="gallery.html" class="hover:text-amber-400 transition-colors">GALLERY</a>
+                    <a href="locate.html" class="hover:text-amber-400 transition-colors">LOCATE US</a>
+                    <a href="contact.html" class="hover:text-amber-400 transition-colors">CONTACT</a>
+                    <a href="teams.html" class="hover:text-amber-400 transition-colors">TEAM</a>
                 </div>
-                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
-                    <a href="index.html" class="text-amber-400">HOME</a>
-                    <a href="about.html" class="hover:text-amber-400">ABOUT US</a>
-                    <a href="operations.html" class="hover:text-amber-400">OPERATIONS</a>
-                    <a href="gallery.html" class="hover:text-amber-400">GALLERY</a>
-                    <a href="locate.html" class="hover:text-amber-400">LOCATE US</a>
-                    <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
-                    <a href="teams.html" class="hover:text-amber-400">TEAM</a>
-                </div>
-                <button onclick="toggleMobileMenu()" class="md:hidden text-3xl"><i class="fa-solid fa-bars"></i></button>
+                <!-- Hamburger -->
+                <button onclick="toggleMobileMenu()" id="hamburgerBtn" aria-label="Open menu" class="lg:hidden text-white text-2xl p-2">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 py-6">
-            <div class="flex flex-col gap-6 px-6 text-lg">
-                <a href="index.html" class="text-amber-400">HOME</a>
-                <a href="about.html" class="hover:text-amber-400">ABOUT US</a>
-                <a href="operations.html" class="hover:text-amber-400">OPERATIONS</a>
-                <a href="gallery.html" class="hover:text-amber-400">GALLERY</a>
-                <a href="locate.html" class="hover:text-amber-400">LOCATE US</a>
-                <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
-                <a href="teams.html" class="hover:text-amber-400">TEAM</a>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-zinc-900 border-t border-zinc-800">
+            <div class="flex flex-col px-6 py-4">
+                <a href="index.html" class="py-3 border-b border-zinc-800 text-amber-400 font-semibold">HOME</a>
+                <a href="about.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">ABOUT US</a>
+                <a href="operations.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">OPERATIONS</a>
+                <a href="gallery.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">GALLERY</a>
+                <a href="locate.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">LOCATE US</a>
+                <a href="contact.html" class="py-3 border-b border-zinc-800 hover:text-amber-400 transition-colors">CONTACT</a>
+                <a href="teams.html" class="py-3 hover:text-amber-400 transition-colors">TEAM</a>
             </div>
         </div>
     </nav>
