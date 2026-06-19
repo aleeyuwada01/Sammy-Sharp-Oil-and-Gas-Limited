@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammy Sharp Oil and Gas Limited</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-bg {
+            background-image: url('background.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <img src="logo.jpeg" alt="Logo" class="h-12 w-auto">
+                    <div>
+                        <span class="text-2xl font-bold tracking-tighter">SAMMY SHARP</span>
+                        <span class="block text-xs text-amber-400 -mt-1">OIL & GAS LIMITED</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" class="text-amber-400">HOME</a>
+                    <a href="about.html" class="hover:text-amber-400">ABOUT US</a>
+                    <a href="operations.html" class="hover:text-amber-400">OPERATIONS</a>
+                    <a href="gallery.html" class="hover:text-amber-400">GALLERY</a>
+                    <a href="locate.html" class="hover:text-amber-400">LOCATE US</a>
+                    <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
+                    <a href="teams.html" class="hover:text-amber-400">TEAM</a>
+                </div>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-3xl"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-zinc-900 border-t border-zinc-800 py-6">
+            <div class="flex flex-col gap-6 px-6 text-lg">
+                <a href="index.html" class="text-amber-400">HOME</a>
+                <a href="about.html" class="hover:text-amber-400">ABOUT US</a>
+                <a href="operations.html" class="hover:text-amber-400">OPERATIONS</a>
+                <a href="gallery.html" class="hover:text-amber-400">GALLERY</a>
+                <a href="teams.html" class="hover:text-amber-400">TEAM</a>
+                <a href="locate.html" class="hover:text-amber-400">LOCATE US</a>
+                <a href="contact.html" class="hover:text-amber-400">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-bg h-screen flex items-center relative">
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
+                    <span class="text-sm font-medium tracking-widest">YOUR TRUSTED GAS PARTNER</span>
+                </div>
+                <h1 class="text-6xl md:text-7xl font-bold leading-none tracking-tighter mb-6">
+                    SAMMY SHARP<br>
+                    <span class="text-amber-400">OIL & GAS</span>
+                </h1>
+                <p class="text-xl text-zinc-300 mb-10">
+                    Premium Industrial & Medical Gases • Reliable Delivery • Uncompromising Safety
+                </p>
+                <div class="flex gap-4">
+                    <a href="contact.html" class="bg-amber-400 hover:bg-amber-500 text-black font-semibold px-8 py-4 rounded-xl inline-flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> GET A QUOTE
+                    </a>
+                    <a href="operations.html" class="border border-white/60 hover:bg-white/10 px-8 py-4 rounded-xl">
+                        OUR SERVICES
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR GASES -->
+    <section class="py-24 bg-zinc-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold">Our Gases</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🟢 Oxygen (O₂)</div>
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center">⚫ CO₂</div>
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center">⚪ Argon (Ar)</div>
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🟠 Helium (He)</div>
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center">🔴 LPG</div>
+                <div class="bg-zinc-900 rounded-3xl p-6 text-center border border-amber-400/30">+ Many More</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12">
+                <!-- Company Info -->
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-3 mb-8">
+                        <img src="logo.jpeg" alt="Logo" class="h-14">
+                        <div class="text-3xl font-bold">SAMMY SHARP</div>
+                    </div>
+                    <p class="text-zinc-400 max-w-md">
+                        Your trusted partner for industrial, medical, and specialty gases in Nigeria. 
+                        Safety • Quality • Reliability
+                    </p>
+                    
+                    <!-- Social Media -->
+                    <div class="flex gap-6 mt-10 text-2xl">
+                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-amber-400"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="md:col-span-2">
+                    <h3 class="font-semibold mb-6">Quick Links</h3>
+                    <div class="space-y-3 text-zinc-400">
+                        <a href="about.html" class="block hover:text-white">About Us</a>
+                        <a href="operations.html" class="block hover:text-white">Operations</a>
+                        <a href="gallery.html" class="block hover:text-white">Gallery</a>
+                        <a href="teams.html" class="block hover:text-white">Our Team</a>
+                        <a href="locate.html" class="block hover:text-white">Locate Us</a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="md:col-span-2">
+                    <h3 class="font-semibold mb-6">Services</h3>
+                    <div class="space-y-3 text-zinc-400">
+                        <div>Medical Gases</div>
+                        <div>Industrial Gases</div>
+                        <div>LPG Supply</div>
+                        <div>Cylinder Refilling</div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="md:col-span-3">
+                    <h3 class="font-semibold mb-6">Contact Us</h3>
+                    <div class="space-y-4 text-zinc-400">
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-phone mt-1"></i>
+                            <div>+234 703 928 1325</div>
+                        </div>
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-envelope mt-1"></i>
+                            <div>dompurespecial@gmail.com</div>
+                        </div>
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <div>Abuja, Nigeria</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-zinc-900 mt-16 pt-8 text-center text-sm text-zinc-500">
+                © 2026 Sammy Sharp Oil and Gas Limited. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/2347039281325" target="_blank"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
+        <i class="fa-brands fa-whatsapp text-4xl text-white"></i>
+    </a>
+	<!-- CLICK TO CALL BUTTON -->
+<a href="tel:+2347039281325" 
+   class="fixed bottom-24 right-6 bg-blue-600 hover:bg-blue-700 w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 hover:scale-110 transition-all">
+    <i class="fa-solid fa-phone text-4xl text-white"></i>
+</a>
+
+    <script>
+        function toggleMobileMenu() {
+            document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
